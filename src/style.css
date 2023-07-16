@@ -1,0 +1,95 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing:border-box;
+}
+
+body{
+    background: #333;
+    color: aliceblue;
+    max-width: 400px;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.new-item-form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-row{
+    display: flex;
+    gap: 0.5rem;    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.form-row input{
+    outline:none;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+    height: 1.5rem;
+}
+
+.form-row input:focus{
+    outline: 2px solid rgb(155, 185, 239);
+}
+
+.btn{
+    display: flex;
+    gap: 0.5rem; 
+    background: black;
+    border: 1px solid cornflowerblue ;
+    color: cornflowerblue;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background:rgb(30, 65, 129);
+    color: cornflowerblue;  
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.list li{
+    display: flex;
+    gap: 1rem;    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list li label {
+    display: flex;
+    gap: 0.5rem;
+    cursor: pointer;
+    align-items: center;
+}
+
+.list li:has(input:focus-visible) label{
+    outline:1px solid cornflowerblue;
+}
+
+.list li input{
+    outline: none;
+    width: 1rem;
+    height: 1rem;
+}
+
+.danger {
+    padding: 0.7rem;
+    color: red;
+    background-color: inherit;
+    border: 2px solid red ;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.danger:hover{
+    color: black;
+    background-color: red;
+}
